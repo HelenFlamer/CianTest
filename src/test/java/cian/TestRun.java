@@ -4,7 +4,7 @@ import org.testng.annotations.Test;
 
 import java.util.*;
 
-public class Main extends TestBase {
+public class TestRun extends TestBase {
 
     @Test
     public void CianTest() throws Exception {

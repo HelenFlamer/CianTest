@@ -23,7 +23,7 @@ public class Helper {
     protected static List<Map<String, String>> readFile() throws Exception {
         List<Map<String, String>> data = new LinkedList<>();
 
-        readFile = new File(Paths.get("").toAbsolutePath() + "/target/Test cian.xlsx");
+        readFile = new File(Paths.get("").toAbsolutePath() + "/src/test/java/files/Test cian.xlsx");
 
         Workbook workbook = WorkbookFactory.create(readFile);
 
@@ -117,7 +117,7 @@ public class Helper {
             sheet.autoSizeColumn(i);
         }
 
-        writeFile = new File(Paths.get("").toAbsolutePath() + "/target/Report cian.xlsx");
+        writeFile = new File(Paths.get("").toAbsolutePath() + "/src/test/java/files/Report cian.xlsx");
         // Write the output to file
         FileOutputStream fileOut = new FileOutputStream(writeFile);
         workbook.write(fileOut);
